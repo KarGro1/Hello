@@ -134,6 +134,7 @@ public class Application {
         assertEquals(12, i);
     }
 
+    @Test
     public void sayHowManyCoinsUseDoWhile() {
         int coins = 0;
         do {
@@ -144,6 +145,7 @@ public class Application {
                 System.out.println("Now I have " + coins + " coins.");
             }
         } while (coins < 3);
+        assertEquals(3,coins);
     }
 
     public static void pretendAppleBananaMarketUseDoWhileAndElseWith() {
