@@ -119,9 +119,11 @@ public class Application {
         assertEquals("Jozef", participants[3]);
     }
 
+    @Test
     public void drawPatternWithForLoop() {
+        int i;
         for (
-                int i = 0;
+                i = 0;
                 i < 12; i++) {
             if (i % 3 == 0) {
                 System.out.println("***");
@@ -129,6 +131,7 @@ public class Application {
             }
             System.out.println("...");
         }
+        assertEquals(12, i);
     }
 
     public void sayHowManyCoinsUseDoWhile() {
