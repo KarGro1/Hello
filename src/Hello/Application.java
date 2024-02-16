@@ -41,6 +41,7 @@ public class Application {
         assertEquals(1100,balance);
     }
 
+    @Test
     public void sayManOrWomanIfEndsWith() {
         String person = "Julia";
         String person2 = "Julian";
@@ -56,6 +57,7 @@ public class Application {
         } else {
             System.out.println(person2 + " is a man.");
         }
+        assertEquals("Julia", person);
     }
 
     @Test
